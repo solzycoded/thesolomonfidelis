@@ -1,0 +1,104 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  background-color: #171717;
+}
+
+a {
+  color: #bb0505;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bb0505;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 60px !important;
+}
+
+h4 {
+  font-size: 30px;
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+.app-color {
+  color: #bb0505;
+}
+
+
+.app-btn-color-outline {
+  border-color: #bb0505;
+  color: #bb0505;
+}
+
+.app-btn-color {
+  background-color: #bb0505;
+}
+
+.app-btn-color-outline:hover {
+  background-color: #bb0505;
+  color: white;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+  
