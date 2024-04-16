@@ -13,8 +13,9 @@ function Nav(){
                         <NavItem icon="house" link="" title="Home" />
                         <NavItem icon="controller" link="/interests" title="Interests" />
                         <NavItem icon="file-earmark-richtext" link="/resume" title="Resume" />
-                        <NavItem icon="person-workspace" link="/porfolio" title="Portfolio" />
-                        <NavItem icon="phone" link="/porfolio" title="Contact" />
+                        <NavItem icon="person-fill-gear" link="/skills" title="Skills" />
+                        <NavItem icon="list-columns" link="/portfolio" title="Portfolio" />
+                        <NavItem icon="telephone" link="/contact" title="Contact" />
                     </ul>
                 </nav>
 

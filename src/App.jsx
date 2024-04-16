@@ -2,9 +2,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
-// call the page here, like one of the above
+import Interests from "./pages/Interests";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
+import Portfolio from "./pages/Portfolio";
 
-import "./assets/css/app.css";
+import "./assets/css/app.css"
+// import "./assets/vendor/aos/aos.css"
 
 function App(){
   return (
@@ -12,10 +17,14 @@ function App(){
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
-          {/* create the router for the page, here, like the commented one, above */}
+          <Route path="interests" element={<Interests />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="portfolio" element={<Portfolio />} />
+
+          <Route path="*" element={<NoPage />} />
         </Route>
-        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   )

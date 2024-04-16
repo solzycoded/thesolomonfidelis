@@ -9,12 +9,12 @@ body {
 }
 
 a {
-  color: #bb0505;
+  color: #ff0000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #bb0505;
+  color: #ff0000;
   text-decoration: none;
 }
 
@@ -27,33 +27,83 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-h1 {
-  font-size: 60px !important;
-}
-
-h4 {
-  font-size: 30px;
-}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 .app-color {
-  color: #bb0505;
+  color: #ff0000;
 }
 
 
 .app-btn-color-outline {
-  border-color: #bb0505;
-  color: #bb0505;
+  border-color: #ff0000 !important;
+  color: #ff0000;
 }
 
 .app-btn-color {
-  background-color: #bb0505;
+  background-color: #ff0000;
 }
 
 .app-btn-color-outline:hover {
-  background-color: #bb0505;
+  background-color: #ff0000;
   color: white;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.main-section-item .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #ff0000;
+}
+
+.main-section-item .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-section-item .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-section-item .content ul strong {
+  margin-right: 10px;
+}
+
+.main-section-item .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #ff0000;
+  line-height: 0;
+}
+
+.main-section-item .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+@media (max-width: 1199px) {
+  #section {
+    /* padding: 30px 0; */
+  }
 }
 
 section {
@@ -61,44 +111,34 @@ section {
   overflow: hidden;
 }
 
+.section-bg {
+  background: inherit;
+}
+
 .section-title {
-  text-align: center;
   padding-bottom: 30px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
+  /* color: #ff0000; */
 }
 
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 40px;
+  width: 50px;
   height: 3px;
-  background: #0563bb;
+  background: #ff0000;
   bottom: 0;
-  left: calc(50% - 20px);
+  left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
 }
-  

@@ -100,6 +100,15 @@
     background: #ff0000;
   }
   
+  .active {
+    color: #fff;
+    background: #ff0000;
+  }
+
+  .active span .active:focus span {
+    color: #fff;
+  }
+
   .nav-menu a:hover span,
   .nav-menu .active span,
   .nav-menu .active:focus span,
@@ -117,7 +126,7 @@
   .nav-menu li:hover>a span {
     display: block;
   }
-  
+
   /**
   * Mobile Navigation 
   */

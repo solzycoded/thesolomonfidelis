@@ -5,7 +5,7 @@ function NavItem({ icon, link, title }){
     return (
         <>
             <li>
-                <Link to={link} className="nav-link scrollto" active-class="active">
+                <Link to={link} className="nav-link scrollto">
                     <i className={`bi bi-${icon}`}></i> <span>{ title }</span>
                 </Link>
             </li>
@@ -15,7 +15,8 @@ function NavItem({ icon, link, title }){
 
 NavItem.propTypes = {
     link: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
 }
 
 export default NavItem;

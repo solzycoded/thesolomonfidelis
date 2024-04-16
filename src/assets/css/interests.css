@@ -1,0 +1,12 @@
+#interests .interest-item {
+    cursor: pointer;
+    margin-bottom: 30px !important;
+}
+
+#interests .interest-item-title {
+    margin-bottom: 5px !important;
+}
+
+#interests .interest-item .interest-item-icon {
+    color: red;
+}
