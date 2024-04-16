@@ -1,9 +1,4 @@
 import PropTypes from "prop-types"
-import createDOMPurify from 'dompurify'
-// import { JSDOM } from 'jsdom'
-
-// const window = (new JSDOM('')).window;
-// const DOMPurify = createDOMPurify(window);
 
 function ProjectInfoItem({ head, body }){
     const filterBody = (text) => {
