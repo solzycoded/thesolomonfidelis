@@ -13,7 +13,7 @@ function Skill({ skill, level }){
     )
 }
 
-
+ 
 Skill.propTypes = {
     skill: PropTypes.string.isRequired,
     level: PropTypes.number.isRequired

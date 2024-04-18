@@ -75,7 +75,20 @@ const portfolio = () => {
     return portfolioDetails;
 }
 
+const interests = () => {
+    let data = [
+        {name: "Movies", about: "i always enjoy a good story, played out well in a movie. i enjoy korean-time pieces, anime and fantasy the most."},
+        {name: "Music", about: "music excites my soul. i don't like coding, without it. i mostly enjoy listening to nigerian artists, like Adekunle Gold and Burna boy."},
+        {name: "Boxing", about: "muhammed ali, iron mike tyson, francis nnganou. all of this cats make me want to be physically fit."},
+        {name: "Psychology", about: "i enjoy delving into the mind, what makes us tick and i've read books, like \"The art of thinking clearly by Robert Dobelli\", just to pursue my interest."},
+        {name: "Chess", about: "i started playing, in my first year of Uni, back in Lagos Nigeria. I enjoyed playing it, and continued till i graduated, in 2019. I've not really been active in recent times, but... it's still an interest of mine."},
+    ]
+
+    return data;
+}
+
 export default {
     portfolio,
     skills,
+    interests,
 }
