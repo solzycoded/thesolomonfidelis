@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 function NavItem({ icon, link, title }){
     return (
         <>
             <li>
-                <Link to={link} className="nav-link scrollto">
+                <NavLink to={ link } className="nav-link">
                     <i className={`bi bi-${icon}`}></i> <span>{ title }</span>
-                </Link>
+                </NavLink>
             </li>
         </>
     )

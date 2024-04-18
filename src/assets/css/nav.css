@@ -14,7 +14,7 @@
 
 @media (max-width: 991px) {
   #header {
-    width: 300px;
+    /* width: 300px; */
     background: #fff;
     border-right: 1px solid #e6e9ec;
     left: -300px;
@@ -130,24 +130,26 @@
   /**
   * Mobile Navigation 
   */
+
   .mobile-nav-toggle {
     position: fixed;
-    right: 10px;
-    top: 10px;
+    left: 10px;
+    bottom: 10px;
     z-index: 9998;
     border: 0;
-    background: none;
-    font-size: 28px;
+    background: #f2f3f5;
+    font-size: 30px;
     transition: all 0.4s;
     outline: none !important;
     line-height: 0;
     cursor: pointer;
     border-radius: 50px;
-    padding: 5px;
+    padding: 8px;
+    color: #ff0000 !important;
   }
   
   .mobile-nav-toggle i {
-    color: #45505b;
+    color: #ff0000 !important;
   }
   
   .mobile-nav-active {
@@ -159,6 +161,6 @@
   }
   
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    background-color: #ff0000;
+    color: #ff0000 !important;
+    background-color: white;
   }
