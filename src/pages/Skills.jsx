@@ -10,7 +10,7 @@ function Skills(){
 
                     <div className="section-title">
                         <h2>Skills</h2>
-                        <p>I favor back-end over front-end, when it comes to development. I have experience in both front-end and back-end, with an array of programming languages, frameworks and libraries.</p>
+                        <p>I took an interest in coding, back in 2017 and since then have worked with several programming languages, frameworks and libraries. I've actively used WAMP stack to build web applications and i'm working on using and possibly switching to MERN stack. I also have experience with Android Application Development with Android Studio, XML, SQLLite and Java. Find below a list of my various technical skills, and what i'd call my skill level for each one of them.</p>
                     </div>
 
                     <SkillSet />

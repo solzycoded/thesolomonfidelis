@@ -25,14 +25,14 @@
   }
   
   .skills .progress-bar-wrap {
-    background: #dce8f8;
+    background: rgb(227, 227, 227);
     height: 10px;
   }
   
   .skills .progress-bar {
     width: 1px;
     height: 10px;
-    transition: 0.9s;
-    background-color: #ff0000;
+    transition: all 0.9s ease-in;
+    background-color: rgb(254, 57, 57);
   }
   

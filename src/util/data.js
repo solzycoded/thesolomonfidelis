@@ -14,9 +14,12 @@ const skills = () => {
     let backEndList = [
         {skill: "PHP", level: 80},
         {skill: "Nodejs", level: 30},
+        {skill: "Express.js", level: 30},
         {skill: "Laravel", level: 70},
         {skill: "MySQL", level: 80},
         {skill: "SQL", level: 80},
+        {skill: "MongoDB", level: 10},
+        {skill: "SQLLite", level: 20},
         {skill: "Microsoft Azure Cloud Hosting", level: 20},
     ];
 
