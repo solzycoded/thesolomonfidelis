@@ -1,6 +1,7 @@
 /* carousel */
 .carousel-img {
-    max-height: 100vh;
+    height: 50vh;
+    width: 100% !important;
 }
 
 .project-name {
@@ -16,4 +17,13 @@
     background-color: rgba(7, 7, 7, 0.6);
     padding: 15px;
     margin-bottom: 20px;
+}
+
+.portfolio-container {
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

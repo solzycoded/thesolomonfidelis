@@ -21,28 +21,28 @@ function PortfolioDesktopItem({ portfolioItem }){
 
                 {/* details */}
                 <div className="col-12 col-md-5">
-                    <div className="">
-                        <div className="container-fluid project-details rounded">
-                            <h4 className="fw-bold border-bottom border-2 pb-2 portfolio-item-section-head">Project Information</h4>
-                            <div>
-                                <ProjectInfoItem head="type" body={ portfolioItem.applicationType } />
-                                <ProjectInfoItem head="front-end technologies" body={ portfolioItem.frontEnd } />
-                                <ProjectInfoItem head="back-end technologies" body={ portfolioItem.backEnd } />
-                                <ProjectInfoItem head="Deployment" body={ (portfolioItem.deployment.deployed=="yes" ? `It was deployed to ${portfolioItem.deployment.where}. ${portfolioItem.deployment.details}` : "Nil") } />
-                                <ProjectInfoItem head="time-frame" body={ portfolioItem.timeFrame } />
-                                <ProjectInfoItem head="repository" body={ `<a href="${portfolioItem.repository}" target="_blank" className="app-color">bidwars repo</a>` } />
-                                <ProjectInfoItem head="URL" body={ `<a href="${portfolioItem.url}" target="_blank" className="app-color">bidwars</a>` } />
-                            </div>
-                        </div>
-                        {/* description */}
+                    <div className="container-fluid project-details rounded">
+                        <h4 className="fw-bold border-bottom border-2 pb-2 portfolio-item-section-head">Project Information</h4>
                         <div>
-                            <h4 className="fw-bold border-bottom border-2 pb-2 portfolio-item-section-head">About { portfolioItem.name }</h4>
-                            <p>{ portfolioItem.description }</p>
+                            <ProjectInfoItem head="type" body={ portfolioItem.applicationType } />
+                            <ProjectInfoItem head="front-end technologies" body={ portfolioItem.frontEnd } />
+                            <ProjectInfoItem head="back-end technologies" body={ portfolioItem.backEnd } />
+                            <ProjectInfoItem head="Deployment" body={ (portfolioItem.deployment.deployed=="yes" ? `It was deployed to ${portfolioItem.deployment.where}. ${portfolioItem.deployment.details}` : "Nil") } />
+                            <ProjectInfoItem head="time-frame" body={ portfolioItem.timeFrame } />
+                            <ProjectInfoItem head="repository" body={ `<a href="${portfolioItem.repository}" target="_blank" className="app-color">${portfolioItem.name} repo</a>` } />
+                            <ProjectInfoItem head="URL" body={ `<a href="${portfolioItem.url}" target="_blank" className="app-color">${portfolioItem.name}</a>` } />
                         </div>
                     </div>
                 </div>
-            </div>
 
+                {/* description */}
+                <div className="col-12">
+                {/* border-bottom border-2  */}
+                    <h4 className="fw-bold portfolio-item-section-head">About { portfolioItem.name }</h4>
+                    <p>{ portfolioItem.description }</p>
+                </div>
+            </div>
+            <hr />
         </>
     )
 }
