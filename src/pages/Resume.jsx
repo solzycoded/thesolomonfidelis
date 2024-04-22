@@ -47,15 +47,17 @@ function Resume(){
                             </div>
                         </div>
 
-                        <div className="text-center mt-10 full-resume">
-                            <div className="d-inline me-3">
-                                <a href="/files/resume.pdf" target="_blank" className="app-btn-color-outline btn border-2 border">View my resume <i className="bi bi-arrow-right ms-1"></i></a>
-                            </div>
-                            <div className="d-inline">
-                                <a href="/files/resume.pdf" 
-                                download="Solomon Fidelis.pdf" 
-                                className="app-btn-color btn text-white rounded-pill"
-                                target="_blank">Download my resume <i className="bi bi-download ms-1"></i></a>
+                        <div className="text-center mt-10 full-resume container-fluid">
+                            <div className="row">
+                                <div className="col-12 col-sm-6 mb-3">
+                                    <a href="/files/resume.pdf" target="_blank" className="app-btn-color-outline btn border-2 border">View my resume <i className="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                                <div className="col-12 col-sm-6">
+                                    <a href="/files/resume.pdf" 
+                                    download="Solomon Fidelis.pdf" 
+                                    className="app-btn-color btn text-white rounded-pill"
+                                    target="_blank">Download my resume <i className="bi bi-download ms-1"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

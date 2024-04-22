@@ -9,7 +9,6 @@ import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
 
 import "./assets/css/app.css"
-// import "./assets/vendor/aos/aos.css"
 
 function App(){
   return (
