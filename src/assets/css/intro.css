@@ -1,0 +1,157 @@
+/*--------------------------------------------------------------
+# intro Section
+--------------------------------------------------------------*/
+.intro-img-container {
+  /* padding-top: 15px; */
+  height: 100vh;
+}
+
+.intro-message {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  transition: top 1s ease-out;
+}
+
+.intro-img-container img {
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #fff;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#fff 0);
+  max-height: 100vh !important;
+  height: inherit !important;
+}
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  /* background: url("../img/hero-bg.jpg") top right no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+.intro-lg {
+  display: block;
+  transition: display 1s ease-out;
+}
+
+.intro-sm {
+  display: none;
+  transition: display 1s ease-out;
+}
+
+#intro:before {
+  content: "";
+  background: inherit;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#intro h1 {
+  font-size: 35px !important;
+  transition: font-size 1s ease-out;
+  color: white;
+}
+
+#intro h4 {
+  font-size: 15px;
+  transition: font-size 1s ease-out;
+}
+
+.read-about-me {
+  font-size: 15px !important;
+  transition: font-size 1s ease-out;
+}
+
+@media (max-width: 550px) {
+  #intro {
+    text-align: center;
+  }
+
+  .intro-lg {
+    display: none;
+  }
+
+  .intro-sm {
+    display: block;
+    /* height: 80vh; */
+  }
+  
+  .intro-message {
+    top: 80px;
+  }
+}
+
+@media (min-width: 700px) { 
+  .intro-message {
+    /* top: 150px; */
+  }
+  
+  #intro h1 {
+    font-size: 50px !important;
+  }
+
+  #intro h4 {
+    font-size: 20px;
+  }
+
+  .read-about-me {
+    font-size: 20px !important;
+  }
+}
+
+
+@media (min-width: 892px) {
+  .intro-img-container {
+    padding-top: 10px;
+    height: 90vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #intro {
+    padding-left: 100px;
+  }
+
+  #intro h1 {
+    font-size: 60px !important;
+  }
+
+  #intro h4 {
+    font-size: 30px;
+  }
+
+  .read-about-me {
+    font-size: 30px !important;
+  }
+
+  .intro-img-container {
+    padding-top: 15px;
+    height: 95vh;
+  }
+}
+
+@media (max-width: 992px) {
+  #intro {
+    padding-left: 20px;
+  }
+}
+
+/* small screen */
+.intro-sm {
+  padding: 20px !important;
+}
+
+#intro .intro-sm-container h4 {
+  font-size: 25px;
+}
+
+.intro-sm-img-container img {
+  max-height: 70vh;
+  height: inherit;
+}

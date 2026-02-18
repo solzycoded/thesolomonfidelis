@@ -1,0 +1,29 @@
+/* carousel */
+.carousel-img {
+    height: 50vh;
+    width: 100% !important;
+}
+
+.project-name {
+    color: rgb(254, 57, 57);
+}
+
+.portfolio-item-section-head {
+    border-color: rgb(254, 57, 57) !important;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    background-color: rgba(7, 7, 7, 0.6);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.portfolio-container {
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
