@@ -24,7 +24,7 @@ function Intro(){
                     {/* lg screen */}
                     <div className="col-6 col-sm-5 col-md-6 col-lg-7 position-relative intro-lg">
                         <div className="intro-message">
-                            <h1>Hey, I'm Solomon Fidelis</h1>
+                            <h1>Hey, I'm Solomon "Solzy" Fidelis</h1>
                             <h4>a <b className="app-color">Software Developer</b> & <b className="app-color">Scrum Master</b>.</h4>
                             <div className="mt-4">
                                 <a href="#about" className="btn rounded-pill read-about-me app-btn-color-outline pe-4 ps-4">Read about me</a>
