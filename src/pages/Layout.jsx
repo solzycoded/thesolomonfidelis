@@ -1,11 +1,15 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
 import Nav from "../components/Nav/Section";
+import { useNavbarContext } from "../contextproviders/NavProvider.jsx";
 
 function Layout(){
+    const { hideNavBar } = useNavbarContext();
+
     return (
         <>
             <Nav />
-            <main id="main">
+            <main id="main" onClick={hideNavBar}>
                 <Outlet />
             </main>
         </>
