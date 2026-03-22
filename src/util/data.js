@@ -1,17 +1,17 @@
 const skills = () => {
-    let frontEndList = [
+    const frontEndList = [
         {skill: "HTML", level: 90},
         {skill: "CSS", level: 80},
         {skill: "Bootstrap", level: 80},
-        {skill: "TailwindCSS", level: 30},
+        {skill: "TailwindCSS", level: 50},
         {skill: "Javascript", level: 75},
-        {skill: "Vue.js", level: 40},
+        {skill: "Vue.js", level: 50},
         {skill: "Reactjs", level: 70},
         {skill: "Alpine.js", level: 60},
         {skill: "jQuery", level: 80},
     ];
 
-    let backEndList = [
+    const backEndList = [
         {skill: "PHP", level: 80},
         {skill: "Nodejs", level: 70},
         {skill: "Typescript", level: 60},
@@ -20,31 +20,31 @@ const skills = () => {
         {skill: "MySQL", level: 80},
         {skill: "SQL", level: 80},
         {skill: "MongoDB", level: 60},
-        {skill: "SQLLite", level: 20},
-        {skill: "Microsoft Azure Cloud Hosting", level: 20},
+        {skill: "SQLLite", level: 50},
+        {skill: "Microsoft Azure Cloud Hosting", level: 50},
     ];
 
-    let programmingLanguages = [
+    const programmingLanguages = [
         {skill: "Java", level: 50},
-        {skill: "Python", level: 40},
-        {skill: "C#", level: 40},
-        {skill: "C++", level: 30},
-        {skill: "Extensible Markup Language (XML)", level: 30}
+        {skill: "Python", level: 50},
+        {skill: "C#", level: 50},
+        {skill: "C++", level: 50},
+        {skill: "Extensible Markup Language (XML)", level: 50}
     ];
 
-    let tools = [
-        {skill: "Android Studio", level: 40},
+    const tools = [
+        {skill: "Android Studio", level: 50},
         {skill: "Visual Studio Code", level: 60},
         {skill: "WAMP Server", level: 70},
         {skill: "Azure Devops tool", level: 50},
         {skill: "GitHub Projects", level: 50},
     ];
 
-    let others = [
+    const others = [
         {skill: "AGILE SCRUM", level: 60},
         {skill: "Object Oriented Programming", level: 70},
         {skill: "GITHUB and GIT", level: 60},
-        {skill: "CI/CD Pipeline", level: 30},
+        {skill: "CI/CD Pipeline", level: 50},
     ];
 
     return {frontEndList, backEndList, programmingLanguages, tools, others};
