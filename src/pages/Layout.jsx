@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import { useState } from "react";
 import Nav from "../components/Nav/Section";
 import { useNavbarContext } from "../contextproviders/NavProvider.jsx";
 
