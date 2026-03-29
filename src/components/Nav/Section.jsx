@@ -9,8 +9,7 @@ function Nav(){
 
     return (
         <>
-        {/* mobile-nav-toggle  */}
-            <i className={ ("rounded-circle bi d-lg-none bi-chevron-" + (showNav ? "left" : "right")) } onClick={toggleNavBar}></i>
+            <i className={ (`rounded-circle bi mobile-nav-toggle d-lg-none bi-chevron-${showNav ? "left" : "right"}`) } onClick={toggleNavBar}></i>
             <header id="header" className="d-flex flex-column justify-content-center">
 
                 <nav id="navbar" className="navbar nav-menu">
