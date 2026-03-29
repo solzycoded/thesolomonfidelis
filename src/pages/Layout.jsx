@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Nav from "../components/Nav/Section";
+import Nav from "../components/Nav/Section.jsx";
 import { useState, useEffect } from "react";
 import { useNavbarContext } from "../contextproviders/NavProvider.jsx";
 
 function Layout(){
-    const { showNav, hideNavBar } = useNavbarContext();
+    const { hideNavBar } = useNavbarContext();
     const [isLargeScreen, setIsLargeScreen] = useState( // stores the value of the screen size 
         window.matchMedia("(min-width: 992px)").matches
     );
