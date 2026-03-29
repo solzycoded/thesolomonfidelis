@@ -10,7 +10,7 @@ function Intro(){
                     {/* border border-2  */}
                         <div className="p-2 rounded intro-sm-container">
                             <div className="intro-sm-img-container">
-                                <img className="w-100 img-fluid rounded" src="/imgs/dp 1.jpeg" alt="solomon fidelis" />
+                                <img className="w-100 img-fluid img-thumbnail rounded" src="/imgs/dp 1.jpeg" alt="solomon fidelis" />
                             </div>
                             <div className="mb-4">
                                 <h1>Solomon Fidelis</h1>
