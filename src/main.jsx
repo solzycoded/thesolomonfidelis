@@ -4,9 +4,9 @@ import App from './App.jsx'
 
 const appRoot = document.getElementById('root');
 
-const dom = ReactDOM.createRoot(appRoot)
+const root = ReactDOM.createRoot(appRoot)
 
-dom.render(
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
