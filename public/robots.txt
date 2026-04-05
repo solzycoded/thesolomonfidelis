@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Block access to certain directories if needed
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://solzycoded.github.io/thesolomonfidelis/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

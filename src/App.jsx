@@ -11,26 +11,29 @@ import About from "./components/Home/About.jsx";
 
 import "./assets/css/app.css"
 import NavProvider from "./contextproviders/NavProvider.jsx";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 function App(){
   return (
-    <NavProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="interests" element={<Interests />} />
-            <Route path="resume" element={<Resume />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="skills" element={<Skills />} />
-            <Route path="portfolio" element={<Portfolio />} />
+    <ErrorBoundary>
+      <NavProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="interests" element={<Interests />} />
+              <Route path="resume" element={<Resume />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="skills" element={<Skills />} />
+              <Route path="portfolio" element={<Portfolio />} />
 
-            <Route path="*" element={<NoPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </NavProvider>
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </NavProvider>
+    </ErrorBoundary>
   )
 }
 

@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import PropTypes from 'prop-types';
 
 function Skill({ skill, level }){
@@ -13,10 +14,10 @@ function Skill({ skill, level }){
     )
 }
 
- 
+
 Skill.propTypes = {
     skill: PropTypes.string.isRequired,
     level: PropTypes.number.isRequired
 }
 
-export default Skill;
+export default memo(Skill);

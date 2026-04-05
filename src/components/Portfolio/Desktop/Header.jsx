@@ -1,3 +1,4 @@
+import { memo } from "react";
 import PropTypes from "prop-types"
 
 function PortfolioItemHeader({ projectName, projectType }){
@@ -16,4 +17,4 @@ PortfolioItemHeader.propTypes = {
     projectType: PropTypes.string.isRequired,
 }
 
-export default PortfolioItemHeader;
+export default memo(PortfolioItemHeader);

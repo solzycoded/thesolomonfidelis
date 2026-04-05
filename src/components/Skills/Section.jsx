@@ -1,8 +1,8 @@
 import Skill from "./Item"
-import data from "../../util/data"
+import { skills } from "../../util/data"
 
 function SkillSet(){
-    const skillSet = data.skills();
+    const skillSet = skills;
 
     const renderSkills = (skills) => {
         const list = skills.map((value, i) => {

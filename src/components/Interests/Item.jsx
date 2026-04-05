@@ -1,3 +1,4 @@
+import { memo } from "react";
 import PropTypes from "prop-types"
 
 function InterestItem({ interest }){
@@ -20,4 +21,4 @@ InterestItem.propTypes = {
     interest: PropTypes.object.isRequired
 }
 
-export default InterestItem;
+export default memo(InterestItem);

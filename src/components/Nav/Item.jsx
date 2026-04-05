@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { memo } from "react";
 import PropTypes from 'prop-types';
 
 function NavItem({ icon, link, title }){
@@ -19,4 +20,4 @@ NavItem.propTypes = {
     icon: PropTypes.string.isRequired,
 }
 
-export default NavItem;
+export default memo(NavItem);

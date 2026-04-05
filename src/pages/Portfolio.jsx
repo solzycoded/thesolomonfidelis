@@ -1,11 +1,9 @@
 import PortfolioDesktop from "../components/Portfolio/Desktop/Section";
-import data from "../util/data"
+import { portfolio } from "../util/data"
 
 import "../assets/css/portfolio.css"
 
 function Portfolio(){
-    const portfolio = data.portfolio();
-
     return (
         <section id="portfolio" className="portfolio section-bg">
             <div className="container">

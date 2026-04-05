@@ -1,5 +1,6 @@
 import CarouselItem from "./CarouselItem"
 import PropTypes from "prop-types"
+import { memo } from "react"
 
 function PortfolioDesktopCarousel({ images, tag }){
     return (
@@ -39,4 +40,4 @@ PortfolioDesktopCarousel.propTypes = {
     tag: PropTypes.string.isRequired,
 }
 
-export default PortfolioDesktopCarousel;
+export default memo(PortfolioDesktopCarousel);

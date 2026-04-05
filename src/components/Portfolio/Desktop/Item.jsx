@@ -1,3 +1,4 @@
+import { memo } from "react";
 import PortfolioDesktopCarousel from "./Carousel"
 import PortfolioItemHeader from "./Header"
 import ProjectInfoItem from "./ProjectInfoItem"
@@ -51,4 +52,4 @@ PortfolioDesktopItem.propTypes = {
     portfolioItem: PropTypes.object.isRequired
 }
 
-export default PortfolioDesktopItem;
+export default memo(PortfolioDesktopItem);

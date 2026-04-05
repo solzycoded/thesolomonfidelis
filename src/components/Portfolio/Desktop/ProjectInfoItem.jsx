@@ -1,3 +1,4 @@
+import { memo } from "react";
 import PropTypes from "prop-types"
 
 function ProjectInfoItem({ head, body }){
@@ -13,7 +14,7 @@ function ProjectInfoItem({ head, body }){
         <>
             <p>
                 <b className="text-capitalize">{ head }: </b>
-                { 
+                {
                     filterBody(body)
                 }
             </p>
@@ -26,4 +27,4 @@ ProjectInfoItem.propTypes = {
     body: PropTypes.string.isRequired,
 }
 
-export default ProjectInfoItem;
+export default memo(ProjectInfoItem);

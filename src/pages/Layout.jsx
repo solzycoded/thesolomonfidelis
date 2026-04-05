@@ -1,10 +1,15 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Nav from "../components/Nav/Section.jsx";
 import { useState, useEffect } from "react";
 import { useNavbarContext } from "../contextproviders/NavProvider.jsx";
+import useSEO from "../hooks/useSEO.js";
 
 function Layout(){
     const { hideNavBar } = useNavbarContext();
+    const location = useLocation();
+
+    // Update SEO meta tags based on current route
+    useSEO(location.pathname);
     const [isLargeScreen, setIsLargeScreen] = useState( // stores the value of the screen size 
         window.matchMedia("(min-width: 992px)").matches
     );

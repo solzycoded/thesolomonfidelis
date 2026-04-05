@@ -1,5 +1,6 @@
 import PortfolioDesktopItem from "./Item";
 import PropTypes from 'prop-types';
+import { memo } from "react";
 
 function PortfolioDesktop({ portfolio }){
     return (
@@ -22,4 +23,4 @@ PortfolioDesktop.propTypes = {
     portfolio: PropTypes.array.isRequired
 }
 
-export default PortfolioDesktop;
+export default memo(PortfolioDesktop);
