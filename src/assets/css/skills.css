@@ -1,38 +1,42 @@
-
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
-    height: 60px;
+    height: 70px;
     display: block;
-    background: none;
-    border-radius: 0;
-  }
-  
-  .skills .progress .skill {
+    background: rgba(255,255,255,0.06);
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.skills .progress .skill {
     padding: 0;
-    margin: 0 0 6px 0;
+    margin: 0 0 8px 0;
     text-transform: uppercase;
     display: block;
-    font-weight: 600;
+    font-weight: 700;
     font-family: "Poppins", sans-serif;
-    color: white;
-  }
-  
-  .skills .progress .skill .val {
+    color: var(--text);
+}
+
+.skills .progress .skill .val {
     float: right;
     font-style: normal;
-  }
-  
-  .skills .progress-bar-wrap {
-    background: rgb(227, 227, 227);
-    height: 10px;
-  }
-  
-  .skills .progress-bar {
+    color: var(--muted);
+}
+
+.skills .progress-bar-wrap {
+    background: rgba(255,255,255,0.14);
+    height: 14px;
+    border-radius: 999px;
+}
+
+.skills .progress-bar {
     width: 1px;
-    height: 10px;
+    height: 14px;
     transition: all 0.9s ease-in;
-    background-color: rgb(254, 57, 57);
-  }
+    background-color: var(--accent);
+    border-radius: 999px;
+}
   

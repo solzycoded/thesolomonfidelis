@@ -1,21 +1,40 @@
 
+:root {
+  --bg: #0d1118;
+  --bg-strong: #0b1017;
+  --surface: rgba(255,255,255,0.08);
+  --surface-strong: rgba(255,255,255,0.12);
+  --text: #f5f8ff;
+  --muted: #bbc4d1;
+  --accent: #ff3b3b;
+  --accent-soft: rgba(255,59,59,0.14);
+  --border: rgba(255,255,255,0.08);
+  --radius: 28px;
+  --shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  background-color: #171717;
+  font-family: "Inter", "Open Sans", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top left, rgba(255,59,59,0.1), transparent 30%),
+              linear-gradient(180deg, #0f131b 0%, #0b1017 100%);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 a {
-  color: #ff0000;
+  color: var(--accent);
   text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a:hover {
-  color: #ff0000;
-  text-decoration: none;
+  color: #ff6b6b;
+  transform: translateX(1px);
 }
 
 h1,
@@ -27,30 +46,52 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-.app-color {
-  color: #ff0000;
+button,
+.btn,
+.app-btn-color,
+.app-btn-color-outline {
+  font-family: inherit;
 }
 
+.app-color {
+  color: var(--accent);
+}
 
 .app-btn-color-outline {
-  border-color: #ff0000 !important;
-  color: #ff0000;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 .app-btn-color {
-  background-color: #ff0000;
+  background-color: var(--accent);
+  color: white;
+  border: 2px solid transparent;
 }
 
-.app-btn-color-outline:hover {
-  background-color: #ff0000;
+.app-btn-color-outline:hover,
+.app-btn-color-outline:focus {
+  background-color: var(--accent);
   color: white;
+  transform: translateY(-1px);
+}
+
+.app-btn-color:hover,
+.app-btn-color:focus {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.85rem 1.7rem;
+  font-weight: 600;
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 100px;
+  transition: margin 0.3s ease;
 }
 
 @media (max-width: 1199px) {
@@ -59,14 +100,22 @@ h6 {
   }
 }
 
-
 /*--------------------------------------------------------------
-# About
+# Section cards and text
 --------------------------------------------------------------*/
+.main-section-item .content {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
 .main-section-item .content h3 {
   font-weight: 700;
-  font-size: 26px;
-  color: #ff0000;
+  font-size: clamp(1.75rem, 2.2vw, 2.4rem);
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
 .main-section-item .content ul {
@@ -75,70 +124,91 @@ h6 {
 }
 
 .main-section-item .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
+  color: var(--muted);
 }
 
 .main-section-item .content ul strong {
   margin-right: 10px;
+  color: var(--text);
 }
 
 .main-section-item .content ul i {
   font-size: 16px;
-  margin-right: 5px;
-  color: #ff0000;
-  line-height: 0;
+  margin-right: 8px;
+  color: var(--accent);
+  line-height: 1;
 }
 
 .main-section-item .content p:last-child {
   margin-bottom: 0;
 }
 
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-
-@media (max-width: 1199px) {
-  #section {
-    /* padding: 30px 0; */
-  }
-}
-
 section {
-  padding: 60px 0;
-  overflow: hidden;
+  padding: 80px 0;
 }
 
 .section-bg {
-  background: inherit;
+  background: transparent;
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
+  max-width: 720px;
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  font-weight: 800;
+  margin-bottom: 16px;
   position: relative;
-  /* color: #ff0000; */
+  letter-spacing: -0.02em;
 }
 
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
-  height: 3px;
-  background: #ff0000;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* utility adjustments */
+.text-white {
+  color: var(--text) !important;
+}
+
+.fst-italic {
+  font-style: italic !important;
+  color: var(--muted);
+}
+
+.lead {
+  color: var(--text);
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.rounded-pill {
+  border-radius: 999px !important;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
 }

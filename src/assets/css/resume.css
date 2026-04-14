@@ -65,3 +65,26 @@
 .full-resume {
     margin-top: 20px;
 }
+
+/* Resume design improvements */
+.resume .resume-title {
+    color: var(--text);
+}
+
+.resume .resume-item {
+    border-left-color: var(--accent);
+}
+
+.resume .resume-item h4 {
+    color: var(--text);
+}
+
+.resume .resume-item h5 {
+    background: var(--accent);
+    border-radius: 999px;
+}
+
+.resume .resume-item::before {
+    border-color: var(--accent);
+    background: var(--bg-strong);
+}

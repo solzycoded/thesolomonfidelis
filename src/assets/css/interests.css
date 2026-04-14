@@ -10,3 +10,25 @@
 #interests .interest-item .interest-item-icon {
     color: red;
 }
+
+/* Interests design improvements */
+#interests .interest-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    padding: 1.4rem 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#interests .interest-item:hover {
+    transform: translateY(-4px);
+    background: rgba(255,59,59,0.08);
+}
+
+#interests .interest-item-title {
+    margin-bottom: 12px !important;
+}
+
+#interests .interest-item .interest-item-icon {
+    color: var(--accent);
+}
