@@ -15,9 +15,10 @@ function Resume(){
                             <h3 className="resume-title">Summary</h3>
                             <div className="resume-item pb-0">
                                 <h4>Solomon Fidelis</h4>
-                                <p><em>Full stack software developer with practical experience delivering real-world applications across academic, commercial, and independent projects. My progression reflects a shift from learning how to build software to building it well, with emphasis on structure, correctness, and maintainability. I have contributed across the full software development lifecycle, designing and evolving production-ready systems with clear business logic and reliable data handling. I approach complex problems analytically, applying appropriate algorithms and data structures while weighing performance and architectural trade-offs. I am seeking to add value within a collaborative engineering team, delivering dependable solutions while continuing to expand my technical ownership and impact. </em></p>
+                                <p><em>Software Developer and Agile practitioner with an MSc in Software Development and experience building full-stack web applications, REST and GraphQL APIs and database-driven systems across e-commerce, healthcare and real-time platforms. Works across JavaScript, TypeScript, React, Node.js and PHP/Laravel, with a focus on secure authentication, payment integration and maintainable design. Certified Professional Scrum Master I (PSM I) and ITIL 4 Foundation practitioner. Brings an engineer’s understanding of delivery to team facilitation, and a facilitator’s habits of transparency and continuous improvement to engineering work.
+                                </em></p>
                                 <ul>
-                                    <li>CV2 4GA Coventry, England</li>
+                                    <li>Coventry, England</li>
                                     <li>(44) 747-3684-012</li>
                                     <li>solomonmfidelis@gmail.com</li>
                                 </ul>
@@ -34,12 +35,22 @@ function Resume(){
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <h3 className="resume-title">Professional Experience</h3>
                             <div className="resume-item">
+                                <h4>Volunteer Scrum Master</h4>
+                                <h5>Feb 2026 – Sept 2026</h5>
+                                <p><em>The Community Revolution, London, England (Remote)</em></p>
+                                <ul>
+                                    <li>Lead Scrum for a four-person Platform Engineering and DevOps team at a London-based technology nonprofit, across 16+ sprints, supporting its move to structured Agile delivery.</li>
+                                    <li>Introduced and refined a Kanban-based board in Plane, giving the team clear visibility of work, ownership and accountability.</li>
+                                    <li>Facilitate Sprint Planning, Daily Scrums, Sprint Reviews and Retrospectives, and coach the team on Scrum principles, backlog management and collaboration.</li>
+                                </ul>
+                            </div>
+
+                            <div className="resume-item">
                                 <h4>Software developer</h4>
                                 <h5>Oct 2022 - Aug 2023</h5>
                                 <p><em>Cobary Inc, Lagos, Nigeria </em></p>
                                 <ul>
                                     <li>Developed and maintained Laravel-based applications and APIs for eCommerce platforms, emphasizing modular architecture and clear business logic.</li>
-                                    <li>Refactored legacy codebases to improve maintainability and enforce consistent coding standards, reducing technical debt and improving development efficiency by 25%. </li>
                                     <li>Designed database relationships and optimized MySQL queries to support scalable transaction processing. </li>
                                     <li>Worked closely with designers and product owners to translate business requirements into robust technical solutions, balance performance, and long-term maintainability.</li>
                                 </ul>
