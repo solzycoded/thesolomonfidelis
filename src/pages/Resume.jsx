@@ -49,10 +49,10 @@ function Resume(){
                         <div className="text-center mt-10 full-resume container-fluid">
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <a href="/files/Solomon Fidelis Resume.pdf" target="_blank" className="app-btn-color-outline btn border-2 border">View my resume <i className="bi bi-arrow-right ms-1"></i></a>
+                                    <a href="/files/Solomon_Mudiaga_Fidelis_CV.pdf" target="_blank" className="app-btn-color-outline btn border-2 border">View my resume <i className="bi bi-arrow-right ms-1"></i></a>
                                 </div>
                                 <div className="col-12 col-sm-6">
-                                    <a href="/files/Solomon Fidelis Resume.pdf" 
+                                    <a href="/files/Solomon_Mudiaga_Fidelis_CV.pdf" 
                                     download="Solomon Fidelis.pdf" 
                                     className="app-btn-color btn text-white rounded-pill"
                                     target="_blank">Download my resume <i className="bi bi-download ms-1"></i></a>
@@ -64,7 +64,7 @@ function Resume(){
                 </div>
             </section>
 
-    )
+    ) 
 }
 
 export default Resume;
