@@ -15,6 +15,7 @@ export const skills = {
         {skill: "Nodejs", level: 70},
         {skill: "Typescript", level: 60},
         {skill: "Express.js", level: 70},
+        {skill: "GraphQL", level: 50},
         {skill: "Laravel", level: 70},
         {skill: "MySQL", level: 80},
         {skill: "SQL", level: 80},
@@ -33,14 +34,20 @@ export const skills = {
         {skill: "Android Studio", level: 50},
         {skill: "Visual Studio Code", level: 60},
         {skill: "WAMP Server", level: 70},
-        {skill: "Azure Devops tool", level: 50},
+        {skill: "Azure Devops", level: 50},
         {skill: "GitHub Projects", level: 50},
-    ],
-    others: [
-        {skill: "AGILE SCRUM", level: 60},
-        {skill: "Object Oriented Programming", level: 70},
+        {skill: "Plane", level: 50},
         {skill: "GITHUB and GIT", level: 60},
         {skill: "CI/CD Pipeline", level: 50},
+    ],
+    others: [
+        {skill: "AGILE SCRUM", level: 70},
+        {skill: "Scrum Events Facilitation", level: 70},
+        {skill: "ITIL 4 foundation in IT service management", level: 60},
+        {skill: "Team Building", level: 60},
+        {skill: "Object Oriented Programming", level: 70},
+        {skill: "Model View Controller (MVC)", level: 90},
+        {skill: "ER Database design", level: 90},
     ]
 };
 
