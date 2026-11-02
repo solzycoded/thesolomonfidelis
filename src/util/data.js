@@ -190,7 +190,7 @@ export const contactItemList = [
     {
         link: "tel:447473684012", 
         icon: "telephone-fill",
-        title: "call",
+        title: "phone",
     },
     {
         link: "https://twitter.com/solzycode", 
