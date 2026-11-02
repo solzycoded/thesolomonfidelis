@@ -1,16 +1,13 @@
 import { NavLink } from "react-router-dom";
-import { memo } from "react";
 import PropTypes from 'prop-types';
 
 function NavItem({ icon, link, title }){
     return (
-        <>
-            <li>
-                <NavLink to={ link } className="nav-link">
-                    <i className={`bi bi-${icon}`}></i> <span>{ title }</span>
-                </NavLink>
-            </li>
-        </>
+        <li>
+            <NavLink to={ link } className="nav-link">
+                <i className={`bi bi-${icon}`}></i> <span>{ title }</span>
+            </NavLink>
+        </li>
     )
 }
 
@@ -20,4 +17,4 @@ NavItem.propTypes = {
     icon: PropTypes.string.isRequired,
 }
 
-export default memo(NavItem);
+export default NavItem;

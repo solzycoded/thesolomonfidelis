@@ -175,3 +175,36 @@ export const interests = [
     {name: "Reading", about: "i enjoy reading books. whenever i absorb new knowledge into my mind, it allows me to view the world from a different perspective. it's intoxicating!"},
     {name: "Cycling", about: "this one is a most recent interest/hobby of mine. i like to cycle whenever i can."},
 ];
+
+export const contactItemList = [
+    {
+        link: "https://wa.me/447473684012?text=Hi, I got your number from your website. I want to talk to you about ...", 
+        icon: "whatsapp",
+        title: "whatsapp",
+    },
+    {
+        link: "https://www.instagram.com/theonly_mudiaga/", 
+        icon: "instagram",
+        title: "instagram",
+    },
+    {
+        link: "tel:447473684012", 
+        icon: "telephone-fill",
+        title: "call",
+    },
+    {
+        link: "https://twitter.com/solzycode", 
+        icon: "twitter",
+        title: "X",
+    },
+    {
+        link: "https://www.linkedin.com/in/solomon-fidelis-7a80b9132/",
+        icon: "linkedin",
+        title: "linkedin",
+    },
+    {
+        link: "mailto:solomonmfidelis@gmail.com",
+        icon: "envelope-at-fill",
+        title: "gmail",
+    },
+];
